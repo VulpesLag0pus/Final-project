@@ -15,7 +15,7 @@ class MyClient(discord.Client):
         print('Logged on as {0.user}!'.format(self))
 
     async def on_message(self, message):
-       member = message.guild.get_member(1152192959916298340)
+       member = message.guild.get_member(#Your user ID)
 #Making sure bot issn't responding to itself:
        if message.author == self.user:
          return
@@ -50,4 +50,4 @@ intents.presences = True
 intents.message_content = True
 #Activating the bot
 client = MyClient(intents=intents)
-client.run('MTE2MTc1NDg0NTE1ODU3MjE4Mw.GMg12a.BuXLBE8Dl-3ISJLhm7Yj7c3iJJ8rousChfUgwI')
+client.run('#Your token here!')
